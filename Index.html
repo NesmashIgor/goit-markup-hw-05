@@ -27,9 +27,15 @@
                 <div class="nav-container">
                     <nav>
                         <ul class="list list-container">
-                            <li><a class="header-list" href="./Index.html">Студія</a></li>
-                            <li><a class="header-list" href="./portfolio.html">Портфоліо</a></li>
-                            <li><a class="header-list" href="#">Контакти</a></li>
+                            <li>
+                                    <a class="header-list header-list-bar" href="./Index.html">Студія</a>
+                            </li> 
+                            <li>
+                                <a class="header-list" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li>
+                                <a class="header-list" href="#">Контакти</a>
+                            </li>
                         </ul>
                     </nav>
                     <ul class="list contact-container">
@@ -52,24 +58,31 @@
     </header>
     <main>
 <!-- Мейн секція -->
-        <section class="hero-section">
-            <div class="container">
-                            <h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
-                            <button class="hero-button" type="button">Замовити послугу</button>
+<section class="hero-section">
+    <div class="container">
+        <h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
+        <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="button-modal-close" data-modal-close>
+                    <img src="./image/Close.svg" alt="хрестик для зачинення">
+                </button>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
                 <section class="main-section">
                     <div class="container"> 
                         <ul class="list list-main-container">
-                                <li>
-                                    <div class="icon-main">
-                                        <svg width="70px" hight="70px">
-                                            <use href="./image/icons.svg#icon-antenna-1"></use>
-                                        </svg>
-                                    </div> 
-                                    <h3 class="list-main">Увага до деталей</h3>
-                                    <p class="text-main">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                                </li>
+                            <li>
+                                <div class="icon-main">
+                                    <svg width="70px" hight="70px">
+                                        <use href="./image/icons.svg#icon-antenna-1"></use>
+                                    </svg>
+                                </div> 
+                                <h3 class="list-main">Увага до деталей</h3>
+                                <p class="text-main">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                            </li>
                                 <li>
                                     <div class="icon-main">
                                         <svg width="70px" hight="70px">
@@ -101,24 +114,39 @@
                     </div>
         </section>
 <!-- Чим ми займаємося -->
-        <section class="section">
-            <div class="container">
-                <div class="title-main-container">
-                    <h2 class="title-main">Чим ми займаємося</h2>
-                </div>
-                <ul class="list image-main-container">
-                        <li>
-                            <img src="./image/box1.jpg" alt="Людина користується комп'ютером" width="370" height="294">
-                        </li>
-                        <li>
-                            <img src="./image/box2.jpg" alt="Людина користується смарфоном" width="370" height="294">
-                        </li>
-                        <li>
-                            <img src="./image/box3.jpg" alt="Людина користується планшетом" width="370" height="294">
-                        </li>
-                </ul>
-            </div>
-        </section>
+<section class="section">
+    <div class="container">
+        <div class="title-main-container">
+            <h2 class="title-main">Чим ми займаємося</h2>
+        </div>
+        <ul class="list image-main-container">
+                <li>
+                    <div class="image-main-list">
+                        <div class="title-main-list">
+                            <p class="title-main-text">десктопні додатки</p>
+                        </div>
+                        <img src="./image/box1.jpg" alt="Людина користується комп'ютером" width="370" height="294">
+                    </div>
+                </li>
+                <li>                       
+                    <div class="image-main-list">
+                        <div class="title-main-list">
+                            <p class="title-main-text">мобільні додатки</p>
+                        </div>
+                        <img src="./image/box2.jpg" alt="Людина користується смарфоном" width="370" height="294">
+                    </div>
+                </li>
+                <li>
+                    <div class="image-main-list">
+                        <div class="title-main-list">
+                            <p class="title-main-text">дизайнерські рішення</p>
+                        </div>
+                        <img src="./image/box3.jpg" alt="Людина користується планшетом" width="370" height="294">
+                    </div>
+                </li>
+        </ul>
+    </div>
+</section>
 <!-- Наша команда -->
         <section class="team-section">
             <div class="container">
@@ -371,5 +399,6 @@
         </div>
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
